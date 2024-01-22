@@ -26,8 +26,7 @@
 
 ## 테이블
 
-![image](https://github.com/dradnats1012/BCSD_Interview/assets/112807640/84530d7f-f47e-49ba-8438-b13aee3a7e3f)
-
+![image](https://github.com/dradnats1012/BCSD_Interview/assets/112807640/b8be80cd-38af-44c0-a092-a65cdfdda1c4)
 
 ## 동작 
 
