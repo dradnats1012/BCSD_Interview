@@ -35,9 +35,9 @@
   - [ ] 해당 열람실 화면으로 전환
 
 ### 좌석 선택(3시간)
-  - [ ] 선행 조건
+  - [x] 선행 조건
     - [x] seats 테이블에서 User의 school_id를 검색했을 때 없음
-    - [ ] 선택하려는 좌석의 is_used 가 false → SeatDTO를 상속받아 사용하는 매개변수로 변경 필요
+    - [x] 선택하려는 좌석의 is_used 가 false
 
   - [x] 결과
     - [x] 선택한 좌석 번호 __seat_id__ 추가
@@ -46,24 +46,27 @@
     - [x] __start_time__ 에 현재 시간 추가
     - [x] __end_time__ 에  (현재 시간 + 3시간) 추가
     - [x] __is_used__ 를 true로 변경
+    - [ ] 해당 room의 usedSeats와 remainSeats update
     
 ### 좌석 변경 
-  - [ ] 선행 조건
+  - [x] 선행 조건
     - [x] seats 테이블에서 User의 school_id를 검색했을 때 없음
-    - [ ] 변경하려는 좌석의 __is_used__ 가 false → SeatDTO를 상속받아 사용하는 매개변수로 변경 필요
-  - [ ] 결과
-    - [ ] 기존 좌석 __사용 종료__
-    - [ ] 변경하려는 좌석의 __school_id__를 User의 __school_id__로 변경
-    - [ ] __start_time__ 에 현재 시간 추가
-    - [ ] __end_time__ 에  (현재 시간 + 3시간) 추가
-    - [ ] __is_used__ 를 true로 변경
-    - [ ] 기존 좌석의 __is_used__ false로 변경
+    - [x] 변경하려는 좌석의 __is_used__ 가 false
+        
+  - [x] 결과
+    - [x] 기존 좌석 __사용 종료__
+    - [x] 변경하려는 좌석의 __school_id__를 User의 __school_id__로 변경
+    - [x] __start_time__ 에 현재 시간 추가
+    - [x] __end_time__ 에  (현재 시간 + 3시간) 추가
+    - [x] __is_used__ 를 true로 변경
+    - [x] 기존 좌석의 __is_used__ false로 변경
     
 ### 좌석 취소
   - [ ] 선행 조건
     - [ ] seats 테이블에서 User의 __school_id__ 를 검색했을 때 있음
-  - [ ] 결과 
-    - [ ] 해당 좌석 __사용 종료__
+  - [x] 결과 
+    - [x] 해당 좌석 __사용 종료__
+    - [ ] 해당 room의 usedSeats와 remainSeats update
     
 ### 좌석 연장
   - [ ] 선행 조건
@@ -74,16 +77,16 @@
 ### 좌석 사용 종료
   - Case
     - [ ] __remain_time__ 이 0이 될 경우
-    - [ ] __좌석 취소__ 할 경우
-    - [ ] __좌석 변경__ 할 경우 기존 좌석 사용 종료
-  - [ ] 선행 조건
-    - [ ] 취소하려는 좌석의 __is_used__가 true
-    - [ ] User의 __school_id__ 와 좌석의 __school_id__ 가 같아야 함
-  - [ ] 결과
-    - [ ] 좌석의 __school_id__ 비우기
-    - [ ] __start_time__, __end_time__, __remain_time__ 비우기
-    - [ ] __is_used__ false로 변경
-    - [ ] __room_id__ 비우기
+    - [x] __좌석 취소__ 할 경우
+    - [x] __좌석 변경__ 할 경우 기존 좌석 사용 종료
+  - [x] 선행 조건
+    - [x] 취소하려는 좌석의 __is_used__가 true
+    - [x] User의 __school_id__ 와 좌석의 __school_id__ 가 같아야 함
+  - [x] 결과
+    - [x] 좌석의 __school_id__ 비우기
+    - [x] __start_time__, __end_time__, __remain_time__ 비우기
+    - [x] __is_used__ false로 변경
+    - [x] __room_id__ 비우기
 
 
 ## 일정
